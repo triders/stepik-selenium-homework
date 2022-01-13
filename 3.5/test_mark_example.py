@@ -5,13 +5,13 @@ from selenium import webdriver
 URL = 'http://selenium1py.pythonanywhere.com/'
 
 
-@pytest.fixture(scope="function")
-def browser():
-    print('\nStarting a browser for test')
-    browser = webdriver.Chrome()
-    yield browser
-    print("\nQuitting the browser")
-    browser.quit()
+# @pytest.fixture(scope="function")
+# def browser():
+#     print('\nStarting a browser for test')
+#     browser = webdriver.Chrome()
+#     yield browser
+#     print("\nQuitting the browser")
+#     browser.quit()
 
 
 class TestMainPage1():
